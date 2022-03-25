@@ -1,7 +1,7 @@
-import { FC, useEffect, useState } from 'react';
+import { FC, useEffect, useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { StorageKeys } from '../../../consts/storageKeys';
-import { getData } from '../../../helpers/registration';
+import { getData, saveData } from '../../../helpers/registration';
 
 type Data = {
   id: string;
@@ -12,9 +12,10 @@ type Data = {
 
 type TableRowProps = {
   data: Data;
+  setOpenModal: (id: string) => void;
 };
 
-const TableRow: FC<TableRowProps> = ({ data }) => (
+const TableRow: FC<TableRowProps> = ({ data, setOpenModal }) => (
   <tr>
     <td>{data.name}</td>
     <td>{data.surname}</td>
@@ -24,20 +25,42 @@ const TableRow: FC<TableRowProps> = ({ data }) => (
         <i className='nyc-icon nyc-icon-edit'></i>
       </Link>
 
-      <a href='/#' className='btn btn--icon -secondary'>
+      <button
+        className='btn btn--icon -secondary'
+        onClick={() => setOpenModal(data.id)}
+      >
         <i className='nyc-icon nyc-icon-close-cross'></i>
-      </a>
+      </button>
     </td>
   </tr>
 );
 
 const Overview = () => {
-  const [data, setData] = useState([]);
+  const deleteId = useRef('');
+  const [openModal, setOpenModal] = useState(false);
+  const [data, setData] = useState<Data[]>([]);
 
   useEffect(() => {
     const d = getData(StorageKeys.registrations) || [];
     setData(d);
   }, []);
+
+  const handleDelete = () => {
+    setOpenModal(false);
+    const data: Data[] = getData(StorageKeys.registrations) || [];
+    const index = data?.findIndex((f) => f.id === deleteId.current);
+
+    if (index >= 0) {
+      data.splice(index, 1);
+      setData(data);
+      saveData(StorageKeys.registrations, data);
+    }
+  };
+
+  const handleOpenModal = (id: string) => {
+    deleteId.current = id;
+    setOpenModal(true);
+  };
 
   return (
     <div className='flex-row center-xs'>
@@ -54,14 +77,55 @@ const Overview = () => {
             </thead>
             <tbody>
               {data.length > 0 ? (
-                data.map((d, i) => <TableRow key={i} data={d} />)
+                data.map((d, i) => (
+                  <TableRow key={i} data={d} setOpenModal={handleOpenModal} />
+                ))
               ) : (
-                <div className='input mt-2x'>
-                  <label>No registration available!</label>
-                </div>
+                <tr>
+                  <td>
+                    <div className='input'>
+                      <label>No registration available!</label>
+                    </div>
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
               )}
             </tbody>
           </table>
+        </div>
+      </div>
+
+      <div className={`modal -medium ${openModal ? '-active' : ''}`}>
+        <div className='card modal__body'>
+          <button className='modal__close' onClick={() => setOpenModal(false)}>
+            <i className='nyc-icon nyc-icon-close-cross'></i>
+          </button>
+          <div className='card__body'>
+            <h3 className='mb-1x'>
+              Are you sure you want to delete this registration?
+            </h3>
+            <p className='mb-3x'>
+              This will permanently delete this registration.
+            </p>
+            <div className='flex-row'>
+              <button
+                type='button'
+                className='btn -primary'
+                onClick={handleDelete}
+              >
+                Yes
+              </button>
+              <button
+                type='button'
+                className='btn -secondary'
+                onClick={() => setOpenModal(false)}
+              >
+                No
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
