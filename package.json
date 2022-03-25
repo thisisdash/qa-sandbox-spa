@@ -1,6 +1,7 @@
 {
   "name": "qa-sandbox-spa",
   "version": "0.1.0",
+  "homepage": "https://thisisdash.github.io/qa-sandbox-spa",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.3",
@@ -24,7 +25,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -45,6 +48,7 @@
     ]
   },
   "devDependencies": {
-    "@types/shortid": "^0.0.29"
+    "@types/shortid": "^0.0.29",
+    "gh-pages": "^3.2.3"
   }
 }
