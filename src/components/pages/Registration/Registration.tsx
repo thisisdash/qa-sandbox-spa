@@ -70,7 +70,7 @@ const Registration = () => {
 
   return (
     <div className='flex-row center-xs'>
-      <div className='col-xs-12 col-sm-12 col-md-6'>
+      <div className='col-xs-12 col-sm-8 col-md-6'>
         <div className='card card--horizontal card--form mt-4x'>
           <div className='card__body'>
             <h1 className='mb-3x'>Registration form</h1>

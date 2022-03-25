@@ -21,7 +21,10 @@ const TableRow: FC<TableRowProps> = ({ data, setOpenModal }) => (
     <td>{data.surname}</td>
     <td>{data.email}</td>
     <td className='end-xs'>
-      <Link to={`/registration/${data.id}`} className='btn btn--icon -primary'>
+      <Link
+        to={`/registration/${data.id}`}
+        className='btn btn--icon -primary'
+      >
         <i className='nyc-icon nyc-icon-edit'></i>
       </Link>
 
