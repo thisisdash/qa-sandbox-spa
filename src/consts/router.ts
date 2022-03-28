@@ -1,0 +1,1 @@
+export const RouterPrefix = '/qa-sandbox-spa';

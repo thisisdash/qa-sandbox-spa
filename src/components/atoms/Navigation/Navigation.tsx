@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { RouterPrefix } from '../../../consts/router';
 
 const Navigation = () => (
   <>
@@ -6,7 +7,7 @@ const Navigation = () => (
       <div className='site-navigation__main-menu'>
         <div className='container'>
           <figure className='site-navigation__logo'>
-            <Link to='/'>
+            <Link to={RouterPrefix}>
               <img
                 src='https://origin.youngcapital.nl/external/static/images/site-navigation/yc.svg'
                 alt='Website Title'
@@ -15,10 +16,10 @@ const Navigation = () => (
             </Link>
             <ul className='flex-row'>
               <li className='ml-2x'>
-                <Link to='/'>Overview</Link>
+                <Link to={RouterPrefix}>Overview</Link>
               </li>
               <li className='ml-2x'>
-                <Link to='/registration'>New registration</Link>
+                <Link to={`${RouterPrefix}/registration`}>New registration</Link>
               </li>
             </ul>
           </figure>
