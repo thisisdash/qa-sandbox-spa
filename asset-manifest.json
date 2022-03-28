@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/qa-sandbox-spa/static/css/main.d5fc35db.css",
-    "main.js": "/qa-sandbox-spa/static/js/main.46841ace.js",
+    "main.js": "/qa-sandbox-spa/static/js/main.374fd07f.js",
     "static/js/787.f64c9dde.chunk.js": "/qa-sandbox-spa/static/js/787.f64c9dde.chunk.js",
     "index.html": "/qa-sandbox-spa/index.html",
     "main.d5fc35db.css.map": "/qa-sandbox-spa/static/css/main.d5fc35db.css.map",
-    "main.46841ace.js.map": "/qa-sandbox-spa/static/js/main.46841ace.js.map",
+    "main.374fd07f.js.map": "/qa-sandbox-spa/static/js/main.374fd07f.js.map",
     "787.f64c9dde.chunk.js.map": "/qa-sandbox-spa/static/js/787.f64c9dde.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d5fc35db.css",
-    "static/js/main.46841ace.js"
+    "static/js/main.374fd07f.js"
   ]
 }
