@@ -23,7 +23,7 @@ const Navigation = () => (
         </div>
       </div>
     </div>
-    <div className='container' style={{ marginTop: '90px' }}>
+    <div className='container header' >
       <h1 className='ribbon__heading'>QA Assignment playground</h1>
     </div>
   </>

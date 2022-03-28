@@ -5,7 +5,7 @@ import Registration from '../Registration';
 import './App.css';
 
 const App = () => (
-  <div className='App'>
+  <>
     <Navigation />
     <BrowserRouter>
       <Routes>
@@ -15,7 +15,7 @@ const App = () => (
         <Route path='*' element={<Overview />} />
       </Routes>
     </BrowserRouter>
-  </div>
+  </>
 );
 
 export default App;
