@@ -5,17 +5,15 @@ import Registration from '../Registration';
 import './App.css';
 
 const App = () => (
-  <>
+  <BrowserRouter>
     <Navigation />
-    <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<Overview />} />
-        <Route path='/registration' element={<Registration />} />
-        <Route path='/registration/:id' element={<Registration />} />
-        <Route path='*' element={<Overview />} />
-      </Routes>
-    </BrowserRouter>
-  </>
+    <Routes>
+      <Route path='/' element={<Overview />} />
+      <Route path='/registration' element={<Registration />} />
+      <Route path='/registration/:id' element={<Registration />} />
+      <Route path='*' element={<Overview />} />
+    </Routes>
+  </BrowserRouter>
 );
 
 export default App;
