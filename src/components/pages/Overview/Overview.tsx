@@ -1,5 +1,6 @@
 import { FC, useEffect, useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
+import { RouterPrefix } from '../../../consts/router';
 import { StorageKeys } from '../../../consts/storageKeys';
 import { getData, saveData } from '../../../helpers/registration';
 
@@ -22,7 +23,7 @@ const TableRow: FC<TableRowProps> = ({ data, setOpenModal }) => (
     <td>{data.email}</td>
     <td className='end-xs'>
       <Link
-        to={`/registration/${data.id}`}
+        to={`${RouterPrefix}/registration/${data.id}`}
         className='btn btn--icon -primary'
       >
         <i className='nyc-icon nyc-icon-edit'></i>
