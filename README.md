@@ -5,7 +5,7 @@ After (build) and run you should see the application responding to `localhost:30
 
 ## Run
 
-## Docker build
+### Docker build
 
 In order to run the application you need to have Docker installed and build the app from the root directory with
 ```bash
@@ -17,7 +17,7 @@ To run the application you can then use the command
 docker run -it -p 3000:3000 qa-sandbox
 ```
 
-## Docker-compose build
+### Docker-compose build
 
 In order to run the application you need to have Docker and docker-compose installed and build the app from the root directory with
 ```bash
