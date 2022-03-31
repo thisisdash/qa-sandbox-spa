@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  qa-sandbox:
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile
+    image: qa-sandbox
+    ports:
+      - "3000:3000"
