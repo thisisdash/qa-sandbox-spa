@@ -19,6 +19,7 @@
     "shortid": "^2.2.16",
     "typescript": "^4.6.3",
     "web-vitals": "^2.1.4",
+    "@playwright/test": "^1.22.1",
     "yup": "^0.32.11"
   },
   "scripts": {
@@ -27,7 +28,10 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "e2etest": "npx playwright test",
+    "e2etest:headed": "npx playwright test --headed",
+    "playwright": "start-server-and-test start http://localhost:3000/qa-sandbox-spa e2etest"
   },
   "eslintConfig": {
     "extends": [
