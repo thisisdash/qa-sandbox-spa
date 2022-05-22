@@ -88,8 +88,14 @@ Runs all the e2e playwright tests headed. After test execution, test report is a
 
 ### Run Tests in Docker
 
+Build the container with this command
+```bash
+docker build -t qa-sandbox -f docker/Dockerfile .
+```
+Run the tests with the below command
+
 ```bash
 docker run -it -p 3000:3000 qa-sandbox
 ```
 
-Modified the existing docker file. Updated the image to the playwright supported image. Also added a command to start the application and run tests once the application is up.
+Created a new docker file to run tests on docker. User the image to the playwright supported image. Also added a command to start the application and run tests once the application is up.
