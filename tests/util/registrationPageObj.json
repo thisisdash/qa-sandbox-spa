@@ -1,0 +1,34 @@
+{
+  "registrationFormPage": {
+    "inputFields": {
+      "name": "css=#name",
+      "surName": "css=#surname",
+      "email": "css=#email",
+      "phone": "css=#phone",
+      "submit": "//button"
+    },
+    "errorElements": {
+      "name": "css=div.input.input--error>input#name + p.input__validation",
+      "surName": "css=div.input.input--error>input#surname + p.input__validation",
+      "email": "css=div.input.input--error>input#email + p.input__validation",
+      "phone": "css=div.input.input--error>input#phone + p.input__validation",
+      "errorDiv": "div.input.input--error"
+    },
+    "errorMessages": {
+      "name": "Invalid Name",
+      "surName": "Invalid Surname",
+      "email": "Invalid email address",
+      "phone": "Invalid Phone Number",
+      "req": "Required"
+    }
+  },
+  "OverviewPage": {
+    "tableFields": {
+      "accept": "css=div.flex-row > button.btn.-primary",
+      "delete": "css=td.end-xs > button",
+      "email": "//table//tr/td[3]",
+      "name": "//table//tr/td[1]",
+      "surName": "//table//tr/td[2]"
+    }
+  }
+ }

@@ -1,0 +1,152 @@
+﻿{
+  "registrationFormPage": {
+    "TC_Form_Validation1": {
+      "name": "Testname1",
+      "surname": "TestSurName1",
+      "email": "Test1@sds.com",
+      "phone": "323232323232"
+    },
+    "TC_Form_Validation2": {
+      "count": 2
+    },
+    "TC_Name_Validation1": {
+      "surname": "TestSurName2",
+      "email": "Test2@sds.com",
+      "phone": "323232323232"
+    },
+    "TC_Name_Validation2": {
+      "type": "text",
+      "label": "name"
+    },
+    "TC_Name_Validation3": {
+      "name": "Testname",
+      "surname": "TestSurName1",
+      "email": "Test1@sds.com",
+      "phone": "323232323232"
+    },
+    "TC_Name_Validation4": {
+      "name": "স্বরঅ诶",
+      "surname": "TestSurName1",
+      "email": "Test1@sds.com",
+      "phone": "323232323232"
+    },
+    "TC_Name_Validation5": {
+      "name": "ddsdasd44545454",
+      "surname": "TestSurName1",
+      "email": "Test1@sds.com",
+      "phone": "323232323232"
+    },
+    "TC_Name_Validation6": {
+      "name": "dewega we ##$$&&&%",
+      "surname": "TestSurName1",
+      "email": "Test1@sds.com",
+      "phone": "323232323232"
+    },
+    "TC_Surname_Validation1": {
+      "name": "ddsdsdsd",
+      "email": "Test1@sds.com",
+      "phone": "323232323232"
+    },
+    "TC_Surname_Validation2": {
+      "type": "text",
+      "label": "Surname"
+    },
+    "TC_Surname_Validation3": {
+      "name": "Testname",
+      "surname": "TestSurName",
+      "email": "Test1@sds.com",
+      "phone": "323232323232"
+    },
+    "TC_Surname_Validation4": {
+      "name": "zcdasdad",
+      "surname": "স্বরঅ诶TestSu",
+      "email": "Test1@sds.com",
+      "phone": "323232323232"
+    },
+    "TC_Surname_Validation5": {
+      "name": "ddsdas",
+      "surname": "T464564estSurName1",
+      "email": "Test1@sds.com",
+      "phone": "323232323232"
+    },
+    "TC_Surname_Validation6": {
+      "name": "sadasdasd",
+      "surname": "dewega we ##$$&&&%TestSurName1",
+      "email": "Test1@sds.com",
+      "phone": "323232323232"
+    },
+    "TC_ContactEmail_Validation1": {
+      "name": "sadasdasd",
+      "surname": "dewega",
+      "phone": "323232323232"
+    },
+    "TC_ContactEmail_Validation2": {
+      "type": "text",
+      "label": "email"
+    },
+    "TC_ContactEmail_Validation3": {
+      "name": "Testname",
+      "surname": "TestSurName",
+      "email": "Test1@sds.com",
+      "phone": "323232323232"
+    },
+    "TC_ContactEmail_Validation4": {
+      "name": "Testname",
+      "surname": "TestSurName",
+      "email": "Test1@sds.wes.com",
+      "phone": "323232323232"
+    },
+    "TC_ContactEmail_Validation5": {
+      "name": "Testname",
+      "surname": "TestSurName",
+      "email": "Te++ds+st1@sds.wes.com",
+      "phone": "323232323232"
+    },
+    "TC_ContactEmail_Validation6": {
+      "name": "Testname",
+      "surname": "TestSurName",
+      "email": "Test23232@sds23s.com",
+      "phone": "323232323232"
+    },
+    "TC_ContactEmail_Validation7": {
+      "name": "Testname",
+      "surname": "TestSurName",
+      "email": "Test2323#$%&2@sds23s.com",
+      "phone": "323232323232"
+    },
+    "TC_ContactEmail_Validation8": {
+      "name": "Testname",
+      "surname": "TestSurName",
+      "email": "Tesada@dfsd@sdss.com",
+      "phone": "323232323232"
+    },
+    "TC_Phone_Validation1": {
+      "name": "Testname",
+      "surname": "TestSurName",
+      "email": "Tesada@dfsds.com"
+    },
+    "TC_Phone_Validation2": {
+      "type": "text",
+      "label": "Phone"
+    },
+    "TC_Phone_Validation3": {
+      "name": "Testname",
+      "surname": "TestSurName",
+      "email": "Tesada@dfsds.com",
+      "phone": "+31123456789"
+    },
+    "TC_Phone_Validation4": {
+      "name": "Testname",
+      "surname": "TestSurName",
+      "email": "Tesada@dfsds.com",
+      "phone": "1023456789"
+    },
+    "TC_Phone_Validation5": {
+      "name": "Testname",
+      "surname": "TestSurName",
+      "email": "Tesada@dfsds.com",
+      "phone": "dhasd ##23232"
+    }
+  }
+
+ }
