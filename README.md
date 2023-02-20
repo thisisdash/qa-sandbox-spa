@@ -40,21 +40,21 @@ Launches the test runner in the interactive watch mode.
 # Automation End-to-end testing using playwright framework
 
 
-## How to run this project for the first time download?
+### How to run this project for the first time download?
 Use the following the commands from the root of the project: 
 ```shell
 npm install 
 ```
 
 
-###to run all the test suite: 
+### To run all the test suite: 
 ```shell
 npm run test-run or
 npm run test-headed
 ```
 
 
-### to run test cases with report and view the report
+### To run test cases with report and view the report
 ```shell
 npm run test-report
 npm run allure-report
