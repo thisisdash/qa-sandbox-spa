@@ -1,0 +1,21 @@
+{
+  "name": "automationassignment",
+  "version": "1.0.0",
+  "description": "automationtestcasecreation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "base64-img": "^1.0.4",
+    "cucumber": "^5.1.0",
+    "eslint": "^4.19.1",
+    "npm": "^6.0.0",
+    "testcafe": "^1.1.0"
+  },
+  "devDependencies": {
+    "eslint-config-google": "^0.9.1"
+  },
+  "author": "Debasish Das",
+  "license": "ISC"
+}
